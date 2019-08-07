@@ -11,7 +11,7 @@ jobs:
           name: The first step
           command: gradle test
           
-          name: The second step
+          sname: The second step
           command: gradle jar
 
       - store_test_results:
