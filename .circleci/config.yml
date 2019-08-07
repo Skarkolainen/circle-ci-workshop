@@ -9,3 +9,5 @@ jobs:
     
       - run:
           gradle test
+      -store test results:
+            
