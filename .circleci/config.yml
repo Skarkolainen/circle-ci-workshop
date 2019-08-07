@@ -4,10 +4,11 @@ jobs:
     docker:
       
       - image:circleci/openjdk:8-jdk
+      
     steps:
-
-    
       - run:
           gradle test
 
+      - store_test_results:
+        path: test-results
             
