@@ -8,10 +8,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: The first step
-          command: gradle test
           
-          sname: The second step
+          name: The second step
           command: gradle jar
 
       - store_test_results:
