@@ -6,9 +6,10 @@ jobs:
       - image:circleci/openjdk:8-jdk
       
     steps:
+      - checkout:
       - run:
-          gradle test
+          command: gradle test
 
       - store_test_results:
-        path: test-results
+        path: build/test-results
             
