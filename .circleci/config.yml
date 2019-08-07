@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       
-      - image:circleci/openjdk:8-jdk
+      - image: circleci/openjdk:8-jdk
       
     steps:
       - checkout
@@ -12,5 +12,4 @@ jobs:
           command: gradle test
 
       - store_test_results:
-          path: build/test-results
-            
+          path: build/test-results            
